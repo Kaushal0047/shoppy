@@ -1,0 +1,280 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+  position: fixed; /* Fixes the navbar to the viewport */
+  top: 0; /* Aligns the navbar to the top of the viewport */
+  left: 0; /* Aligns the navbar to the left of the viewport */
+  width: 100%; /* Full width of the viewport */
+  background-color: rgb(18, 13, 17); /* Background color of the navbar */
+  color: white; /* Text color */
+  padding: 5px 0; /* Padding around the navbar */
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* General link styling within the navigation list */
+#navbar a {
+  color: white; /* Text color */
+  padding: 14px 20px; /* Padding around the text */
+  text-decoration: none; /* Remove underline */
+  text-align: center; /* Center text horizontally */
+  display: inline-block; /* Ensure padding and dimensions apply correctly */
+  border: 2px solid transparent; /* Border width and style; initially transparent */
+  border-radius: 4px; /* Optional: rounded corners for a modern look */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect styling */
+#navbar a:hover {
+  background-color: aqua; /* Background color on hover */
+  color: black; /* Text color on hover (changed to black for contrast) */
+  border-color: black; /* Border color on hover */
+}
+
+
+
+
+.search {
+  
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 14px 20px;
+    
+    
+}
+
+.search input[type="text"] {
+    padding: 6px;
+    margin-left: 20px;
+    width: 500px;
+    height: 30px;
+    border: none;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+
+.search button {
+    padding: 12px 18px;
+    background: white;
+    color: green;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search button i {
+    font-size: 18px;
+}
+
+.search button:hover {
+    background: aqua;
+    color: white;
+}
+
+.sign{
+  justify-content: start;
+  padding-left: 30px;
+}
+
+
+
+
+/* Container for the slider */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1520px; /* Adjust this to your needs */
+  margin: auto;
+  overflow: hidden;
+  margin-top:5%;
+}
+
+/* The slides container */
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Each slide */
+.mySlides {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 15%;
+  width: 60px; /* Larger width */
+  height: 110px; /* Larger height */
+  padding: 16px;
+  margin-top: -30px; /* Center vertically based on the height */
+  color: rgb(160, 164, 155);
+  font-weight: bold;
+  font-size: 24px; /* Larger font size */
+  border: none;
+  cursor: pointer;
+  border-radius: 5%; /* Circular buttons */
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center; /* Center text inside the button */
+  line-height: 60px; /* Align text vertically */
+}
+
+/* Position the previous button on the left */
+.prev {
+  left: 10px; /* Adjust as needed for spacing */
+}
+
+/* Position the next button on the right */
+.next {
+  right: 10px; /* Adjust as needed for spacing */
+}
+
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: #21d533;
+}
+
+
+
+
+
+  
+footer {
+  background-color: #212121;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: block;
+  gap: 10px;
+}
+
+.social-media li a {
+  display: inline-block;
+}
+
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+  margin: 0;
+  text-align: center;
+  padding-top: 5px;
+}
+
+
+
+/* 4 products*/
+.products {
+  display: flex;
+  background-color: red;
+  margin-top: -23%;
+}
+
+/* Individual item styling */
+.item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  height: 300px;
+  margin: 10px;
+  width: 335px;
+  background-color: #f9f9f9;
+ /* Center text */
+  display: flex;
+  flex-direction: column;
+   /* Center content vertically */
+}
+
+.product{
+  display: flex;
+}
+
+
+
+
+.image{
+   
+   height: 190px;
+   width: 325px;
+}
+
+
+.image img{
+  
+  height:190px;
+  width: 250px;
+  padding-left: 40px; 
+}
+
+.image2{
+  height: 190px;
+   width: 325px;
+}
+
+.image2 img{
+  
+  height:200px;
+  width: 195px;
+  padding-left: 70px; 
+}
+
+
+
+
+
+
